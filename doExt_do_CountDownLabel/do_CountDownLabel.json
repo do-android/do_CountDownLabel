@@ -1,0 +1,179 @@
+{
+  "ID": "do_CountDownLabel",
+  "IsContainer": "0",
+  "Type": "UI",
+  "UIType": "View",
+  "Name": "倒计时标签框",
+  "Version": "Internal",
+  "Description": "显示倒计时的文本标签框，支持设置字体样式、大小、内容对齐，",
+  "Icon": "",
+  "BBS": "",
+  "Keyword": "其它类型",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "countDown",
+      "Name": "时间长度",
+      "Type": "Number",
+      "Type_JavaScript": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "设置倒计时时间长度，毫秒值",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      },
+      "Deprecated": false
+    },
+    {
+      "ID": "fontColor",
+      "Name": "字体颜色",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "000000FF",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      },
+      "Deprecated": false
+    },
+    {
+      "ID": "fontSize",
+      "Name": "字体大小",
+      "Type": "Number",
+      "Type_JavaScript": "Number",
+      "DefaultValue": "17",
+      "EditType": "1",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      },
+      "Deprecated": false
+    },
+    {
+      "ID": "fontStyle",
+      "Name": "字体风格",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "normal",
+      "EditType": "1",
+      "Group": "",
+      "Description": "包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "normal",
+            "value": "常规"
+          },
+          {
+            "id": "bold",
+            "value": "粗体"
+          },
+          {
+            "id": "italic",
+            "value": "斜体"
+          },
+          {
+            "id": "bold_italic",
+            "value": "粗斜体"
+          }
+        ]
+      },
+      "Deprecated": false
+    },
+    {
+      "ID": "textAlign",
+      "Name": "文本对齐方式",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "left",
+      "EditType": "0",
+      "Group": "",
+      "Description": "对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "left",
+            "value": "左对齐"
+          },
+          {
+            "id": "center",
+            "value": "居中"
+          },
+          {
+            "id": "right",
+            "value": "右对齐"
+          }
+        ]
+      },
+      "Deprecated": false
+    },
+    {
+      "ID": "textFlag",
+      "Name": "字体标示",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "normal",
+      "EditType": "1",
+      "Group": "",
+      "Description": "包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "normal",
+            "value": "常规"
+          },
+          {
+            "id": "underline",
+            "value": "下划线"
+          },
+          {
+            "id": "strikethrough",
+            "value": "删除线"
+          }
+        ]
+      },
+      "Deprecated": false
+    }
+  ],
+  "Events": [
+    {
+      "ID": "finish",
+      "Description": "倒计时完成触发",
+      "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
+      "ReturnDesc": "",
+      "Deprecated": false
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

@@ -1,0 +1,10 @@
+*.class
+*.apk
+bin/
+gen/
+.settings/
+proguard/
+*.classpath
+/doExt_do_CountDownLabel/libs/docore.jar
+/doExt_do_CountDownLabel/do_build.xml
+/doExt_do_CountDownLabel/do_CountDownLabel.zip
